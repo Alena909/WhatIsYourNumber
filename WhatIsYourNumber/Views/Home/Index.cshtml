@@ -1,0 +1,17 @@
+﻿@{
+    ViewBag.Title = "Today's in history";
+
+}
+
+<h1 class="p-4 my-4">Fun with Numbers</h1>
+<h2 >Get facts about the date in history</h2>
+
+
+<p class="bg-white p-4 text-center home-info" >@ViewBag.MonthDay</p>
+
+<div class="d-flex home-btn">
+    <a  class="btn btn-primary" onclick="javascript:location.reload()">New Fact</a>
+    <a asp-controller="Date" asp-action="Index" class="btn btn-primary">New Date</a>
+    <a asp-controller="Date" asp-action="Random" class="btn btn-primary">Random Date</a>
+</div>
+

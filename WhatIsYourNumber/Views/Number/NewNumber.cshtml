@@ -1,0 +1,16 @@
+﻿@model SearchDate
+@{
+    ViewBag.Title = "Pick a number";
+
+}
+
+<h1 class="pb-3">@ViewBag.Title</h1>
+
+<form method="get" asp-action="NewResult">
+    <div asp-validation-summary="All" class="info-inval"></div>
+    <div class="bg-white p-4 home-info">
+        <label asp-for="Number" class="text-primary">Pick a number</label>
+        <input asp-for="Number" name="number"/>
+    </div>
+    <button type="submit"class="btn btn-primary offset-3 mt-2">Get Info</button>
+</form>

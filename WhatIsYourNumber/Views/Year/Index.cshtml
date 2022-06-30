@@ -1,0 +1,13 @@
+﻿@model SearchDate
+@{
+    ViewBag.Title = "Facts in Years";
+}
+<h1 class="p-4 my-4">@ViewBag.Title</h1>
+<p class="bg-white p-4 text-center home-info">@ViewBag.Result</p>
+
+
+<div class="d-flex home-btn">
+    <a class="btn btn-primary" onclick="javascript:location.reload()">New Fact</a>
+    <a asp-action="GetYear" class="btn btn-primary ">New Year</a>
+    <a asp-action="RandomYear" class="btn btn-primary ">Random Year</a>
+</div>

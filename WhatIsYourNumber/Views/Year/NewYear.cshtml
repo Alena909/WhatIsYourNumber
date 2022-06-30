@@ -1,0 +1,14 @@
+﻿@model SearchDate
+@{
+    ViewBag.Title = "Select a Year";
+}
+<h1 class="p-4 my-4">@ViewBag.Title</h1>
+
+<form method="get" asp-action="NewYear">
+    <div asp-validation-summary="All" class=" info-inval"></div>
+    <div class="bg-white p-4 home-info">
+        <label asp-for="Year">Pick a Year</label>
+        <input asp-for="Year" name="year" class="form-control"/>
+    </div>
+    <button type="submit" asp-controller="Year" asp-action="NewYear" class="btn btn-primary offset-3 mt-2">Get Info</button>
+</form>

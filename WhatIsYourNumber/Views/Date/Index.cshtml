@@ -1,0 +1,30 @@
+﻿@using Microsoft.AspNetCore.Mvc.TagHelpers
+@model SearchDate
+@{
+    ViewBag.Title = "Select a date";
+    
+}
+
+<h1 class="p-4 my-4">@ViewBag.TItle</h1>
+<form method="get" asp-controller="Home" asp-action="Index">
+    <div asp-validation-summary="All" class="info-inval"></div>
+    <div class="bg-white p-4 home-info">
+        <div class="d-flex pb-2">
+            <label asp-for="Month" class="col-3 text-primary">Month</label>
+            <select asp-for="MonthOption" name="month" asp-items="Html.GetEnumSelectList<SearchDate.MonthEnum>()"
+                    class="form-control">
+                <option class="fw-light">Select month</option>
+       </select>
+            
+        </div>
+        <div class=" d-flex pb-2">
+            <label asp-for="Day" class="col-3 text-primary">Day</label>
+            <input asp-for="Day" class="form-control" name="day"/>
+        </div>
+
+
+    </div>
+    <button class="btn btn-primary offset-3 mt-2" type="submit">Get Info</button>
+
+
+</form>

@@ -1,0 +1,66 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background-image: linear-gradient(to right, rgba(255,255,255,1),rgba(0,0,110,0.5)), url("/images/numbers1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: 100%;
+}
+/*h1 {
+    color: blue;
+    font-size: 5rem;
+    font-weight: bold;
+    text-align: center;
+    background-color: #fff;
+}*/
+h1 {
+    text-shadow: 8px 4px 15px white;
+    font-size: 5rem;
+    font-weight: bold;
+    text-align: center;
+}
+h2 {
+    text-shadow: 5px 3px 10px white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.home-info {
+    max-width: 800px;
+    border: 4px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.home-btn a{
+    margin: 0 10px;
+}
+.info-inval {
+    color: red;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 5px 3px 17px white;
+   
+}

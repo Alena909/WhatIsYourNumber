@@ -1,0 +1,14 @@
+﻿@model SearchDate
+@{
+    ViewBag.Title = "Facts about number";
+}
+
+<h1 class="p-4 my-4">@ViewBag.Title</h1>
+<p class="bg-white p-4 text-center home-info">@ViewBag.Result</p>
+
+
+<div class="d-flex home-btn">
+    <a   class="btn btn-primary" onclick="javascript:location.reload()">New Fact</a>
+    <a  asp-action="NewNumber" class="btn btn-primary ">New Number</a>
+    <a  asp-action="Random" class="btn btn-primary ">Random Number</a>
+</div>
